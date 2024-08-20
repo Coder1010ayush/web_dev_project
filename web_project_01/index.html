@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neaty Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="download.jpeg" alt="Neaty Logo">
+                <h1>Neaty</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#" onclick="showSection('welcome')" class="active">Welcome</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('gallery1')">Gallery One</a></li>
+                <li><a href="#" onclick="showSection('gallery2')">Second Gallery</a></li>
+                <li><a href="#" onclick="showSection('gallery3')">Third Gallery</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- Welcome Section -->
+            <div id="welcome" class="section" style="display: block;">
+                <h2>Welcome to Neaty Design</h2>
+                <p>Neaty is a simple and clean design HTML CSS template for any kind of website. Feel free to use this layout. Please tell your friends about our website. Thank you.</p>
+                <p>Suspendisse imperdiet, felis eu hendrerit pretium, sapien mauris blandit arcu, et accumsan neque est ut erat. Vivamus eget tellus euismod, interdum nibh at, eleifend justo. Quisque placerat ante in ex tempor, ultrices bibendum nunc finibus. Etiam luctus nec eros vel pulvinar.</p>
+                
+                <div class="welcome-images">
+                    <img src="menu.png" alt="Welcome Image">
+                    <div class="about-team">
+                        <h3>About the team</h3>
+                        <p>Our team of artisanal bakers crafts each creation with love, blending tradition with a sprinkle of innovation to bring you the sweetest moments in life</p>
+                        <p>Meet the passionate pastry artists behind our bakery, where every loaf, every cake, and every pastry is a masterpiece, baked to perfection with a touch of magic</p>
+                        <p>Behind every delicious treat is a team of bakers who live and breathe the art of baking, committed to delivering joy and warmth in every bite</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Us Section -->
+            <div id="about" class="section" style="display: none;">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <img src="chef.jpeg" alt="Our Team">
+                    <div class="about-text">
+                        <h3>Who We Are</h3>
+                        <p>Neaty Design is a creative and dynamic design studio specializing in innovative web designs, branding, and digital experiences. Our team is dedicated to delivering visually striking and user-friendly solutions tailored to meet the needs of our clients.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>Our mission is to empower businesses and individuals through exceptional design. We believe that great design can transform ideas into impactful digital experiences, and we strive to create work that inspires and engages users.</p>
+                        
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li><strong>Creativity:</strong> We encourage out-of-the-box thinking and push the boundaries of design.</li>
+                            <li><strong>Quality:</strong> We are committed to delivering high-quality work that meets and exceeds expectations.</li>
+                            <li><strong>Collaboration:</strong> We believe in the power of teamwork and work closely with our clients to achieve their goals.</li>
+                            <li><strong>Integrity:</strong> We uphold the highest standards of professionalism and honesty in everything we do.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Gallery Sections -->
+            <div id="gallery1" class="section" style="display:none;">
+                <h2>Gallery One</h2>
+                <div class="gallery">
+                    <img src="g11.png" alt="Gallery Image 1">
+                    <img src="g11.png" alt="Gallery Image 2">
+                    <img src="g11.png" alt="Gallery Image 1">
+                    <img src="g11.png" alt="Gallery Image 2">
+                    <img src="g11.png" alt="Gallery Image 1">
+                    <img src="g11.png" alt="Gallery Image 2">
+                </div>
+            </div>
+            <div id="gallery2" class="section" style="display:none;">
+                <h2>Second Gallery</h2>
+                <div class="gallery">
+                    <img src="food1.jpeg" alt="Gallery Image 1">
+                    <img src="food1.jpeg" alt="Gallery Image 2">
+                    <img src="food1.jpeg" alt="Gallery Image 1">
+                    <img src="food1.jpeg" alt="Gallery Image 2">
+                    <img src="food1.jpeg" alt="Gallery Image 1">
+                    <img src="food1.jpeg" alt="Gallery Image 2">
+                    <img src="food1.jpeg" alt="Gallery Image 1">
+                    <img src="food1.jpeg" alt="Gallery Image 2">
+                </div>
+            </div>
+            <div id="gallery3" class="section" style="display:none;">
+                <h2>Third Gallery</h2>
+                <div class="gallery">
+                    <img src="food2.jpeg" alt="Gallery Image 1">
+                    <img src="food2.jpeg" alt="Gallery Image 2">
+                    <img src="food2.jpeg" alt="Gallery Image 1">
+                    <img src="food2.jpeg" alt="Gallery Image 2">
+                    <img src="food2.jpeg" alt="Gallery Image 1">
+                    <img src="food2.jpeg" alt="Gallery Image 1">
+                    <img src="food2.jpeg" alt="Gallery Image 2">
+                    <img src="food2.jpeg" alt="Gallery Image 2">
+                </div>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact" class="section" style="display:none;">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need further information, feel free to contact us. We are here to help and would love to hear from you!</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
